@@ -13,11 +13,11 @@ Pod::Spec.new do |spec|
 
   spec.subspec 'Core' do |core_spec|
     core_spec.dependency 'URITemplate', '~> 2.0'
-    core_spec.source_files = 'Mockingjay/Mockingjay.{h,swift}',
-        'Mockingjay/MockingjayProtocol.swift',
-        'Mockingjay/{Matchers,Builders}.swift',
-        'Mockingjay/NSURLSessionConfiguration.swift',
-        'Mockingjay/MockingjayURLSessionConfiguration.m'
+    core_spec.source_files = 'Sources/Mockingjay/Mockingjay.{h,swift}',
+        'Sources/Mockingjay/MockingjayProtocol.swift',
+        'Sources/Mockingjay/{Matchers,Builders}.swift',
+        'Sources/Mockingjay/NSURLSessionConfiguration.swift',
+        'Sources/Mockingjay/MockingjayURLSessionConfiguration.m'
   end
 
   spec.subspec 'XCTest' do |xctest_spec|
